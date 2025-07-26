@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Discount {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter the purchase amount:");
+        double amount=obj.nextDouble();
+        double discount=0;
+        if(amount>1000){
+            discount=0.20;
+        }else if(amount>500 && amount <1000){
+            discount=0.10;
+            
+        }else{
+            discount=0.0;
+        }
+        System.out.println("Discounted amount:"+(amount-(amount*discount)));
+        
+    }
+}
